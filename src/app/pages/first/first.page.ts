@@ -16,6 +16,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 })
 export class FirstPage implements OnInit {
 
+
+
   myfoto: any;
   // post: Observable<any[]>;
   // datos: Observable<any[]>;

@@ -8,6 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { Observable } from 'rxjs/Observable';
+
 // firebase
 // import { AngularFireModule } from '@angular/fire';
 // import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
@@ -36,7 +38,7 @@ export const firebaseConfig = {
             AppRoutingModule,
            // AngularFireModule.initializeApp(firebaseConfig),
            // AngularFireDatabaseModule,
-           // Observable
+         //   Observable,
            // AngularFireDatabase,
             // AngularFireAuthModule
           ],

@@ -13,7 +13,7 @@
       <ion-list>
         <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
           <ion-item [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath === p.url">
-            {{p.title}}
+            {{p.title}}  <ion-icon name="contact"></ion-icon>
           </ion-item>
         </ion-menu-toggle>
       </ion-list>

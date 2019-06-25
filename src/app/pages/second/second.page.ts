@@ -3,7 +3,7 @@ import { MenuController, NavController } from '@ionic/angular';
 import { storage, initializeApp } from 'firebase';
 import { FIREBASE_CONFIG } from '../../firebase.config';
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
-// import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 // import { Observable} from 'rxjs';
 // import { Observable } from 'rxjs/Observable';
 // import { AngularFireDatabase } from 'angularfire2/database';
@@ -17,7 +17,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 export class SecondPage implements OnInit {
 
   myfoto: any;
-
+  post: Observable<any[]>;
+ // datos: Observable<any[]>;
 
   constructor(private menuCtrl: MenuController,
              /* private camera: Camera,
