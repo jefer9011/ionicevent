@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<!--
+    <ion-menu-toggle>
+        <ion-button expand="full">Opciones</ion-button>
+      </ion-menu-toggle>
+    
+      <ion-button expand="full" (click)="openMenu()"> Abrir menu </ion-button>
+      <ion-button expand="full" routerLink="/menu/first"> Ir a Perfil</ion-button>
+    -->
+
+    
+
+
+
+
+<ion-grid fixed>
+  <ion-row>
+   <ion-col size="12" size-xs="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let item of [].constructor(50)">
+     
+
+    <!--<ion-col size="12" size-xs="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let datos of datos | async">
+      -->
+      <ion-list>
+        <ion-item>
+      <ion-card color="secondary" >
+        <ion-card-header>
+          <ion-card-subtitle>Encargado</ion-card-subtitle>
+          <ion-card-title>Tarea</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+         <!-- <img src="{{ myfoto  }}"> -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur itaque doloribus maxime recusandae soluta et enim aperiam ipsam eos dignissimos reprehenderit, quasi amet eveniet commodi.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+  <!--
+<ion-card color="secondary" *ngFor="let item of [].constructor(15)">
+  <ion-card-header>
+    <ion-card-subtitle>Mi título</ion-card-subtitle>
+    <ion-card-title>Mi subtítulo</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Mi contenido
+  </ion-card-content>
+</ion-card>
+-->
+
+</ion-content>

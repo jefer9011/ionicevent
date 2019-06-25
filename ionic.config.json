@@ -1,5 +1,7 @@
 {
   "name": "numaevent",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar padding>
+        <img class="fotoperfil" src="{{ myfoto  }}">
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-menu-toggle>
+    <ion-button expand="full">Opciones</ion-button>
+  </ion-menu-toggle>
+<!--
+  <ion-button expand="full" (click)="openMenu()"> Abrir menu </ion-button> 
+  
+ <ion-button expand="full" routerLink="/menu/second"> Ir a Eventos</ion-button>
+-->
+
+  <ion-button style="size: 10%" allign="center" (click)="takePhoto()">Cambiar foto de perfil</ion-button>
+ <!-- <button ion-button (click)="takePhoto()"> Take Photo </button> -->
+
+  <p allign="center"><img src="{{ myfoto  }}"></p>
+
+
+
+  <ion-card  class="ion-padding" >
+    <ion-avatar>
+        <img style="height: 60px; width: 60px; justify-content: center" class="fotoperfil2" src="{{ myfoto  }}"  >
+      </ion-avatar>
+    </ion-card>
+
+
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Jefe de planta</ion-card-subtitle>
+        <ion-card-title>Stan Lee</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content contenteditable="start">
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+    
+    
+</ion-content>
